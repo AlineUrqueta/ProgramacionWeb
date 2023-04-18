@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Ejemplo de Formularios en Bootstrap</h3>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <form action=""> <!-- la action tiene que estar enlazada con el submit-->
+                    <div class="card">
+                        <div class="card-header">
+                            Formulario Ejemplo
+                        </div>
+
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="rut">Rut</label>
+                                <input type="text" id="rut" class="form-control" placeholder="Rut">
+                                <small class="form-text text-muted">Ingrese su RUT sin puntos y con guión</small>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-6">
+                                    <label for="mombre">Nombre</label>
+                                    <input type="text" id="nombre" class="form-control" placeholder="Nombre">
+                                    <small class="form-text text-muted">Ingrese su nombre</small>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="apellido">Apellido</label>
+                                    <input type="text" id="apellido" class="form-control" placeholder="Apellido">
+                                    <small class="form-text text-muted">Ingrese su Apellido</small>
+                                </div>
+
+                            </div>
+                            
+
+                            <div class="form-group">
+                                <select  id="carrera" class="form-control">
+                                    <option> T.U. Informática </option>
+                                    <option>T.U. Electrónica</option>
+                                    <option>T.U. Electricidad</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <!-- Debe tener el mismo id en el input y for en el label para que se pueda seleccionar desde el nombre-->
+                                <div class="form-check form-check-inline" >
+                                    <input type="radio"  id="jDiurna" value="d" name="j" class="form-check-input">
+                                    <label class ="form-check-label" for="jDiurna">Jornada Diurda</label>
+                                </div>
+
+                                <div class="form-check form-check-inline" >
+                                    <input type="radio"  id="jVespertina" value="v" name="j" class="form-check-input">
+                                    <label class ="form-check-label" for="jVespertina">Jornada Vespertina</label>
+                                    
+                                </div>
+                                <div class="form-check form-check-inline" >
+                                    <input type="radio"  id="jResidencial" value="r" name="j" class="form-check-input">
+                                    <label class ="form-check-label" for="jResidencial">Jornada Residencial</label>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" class ="form-check-input" id="gratuidad">
+                                    <label for="gratuidad" class ="form-check-label">Postula Gratuidad</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <button class ="btn btn-warning">Cancelar</button>
+                                <button class ="btn btn-primary">Enviar</button>
+                                <button class ="btn btn-secondary">Limpiar</button>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

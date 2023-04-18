@@ -1,0 +1,36 @@
+.box {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border: 2px solid gray;
+    background-color: aqua;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Responsivo*/
+.flex-container {
+    display: flex;
+    border: 1px solid red;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*adapta la pantalla a los div */
+}
+
+.flex-container2 {
+    display: flex;
+    border: 1px solid rgb(0, 4, 255);
+    flex-direction: row;
+    flex-wrap: wrap;                  /* Adapta la pantalla a los div */
+
+    justify-content: left;            /* RIGHT O LEFT (Todo a la izq o derecha) por defecto */
+
+    justify-content: space-evenly;    /* Cada uno tiene el mismo espacio entremedio (Between / around)*/
+
+    height: 500px;
+    align-items: center;              /* Center / Start / End */
+    /*align-items: stretch;+/         /* Ocupa todo el tamaño del div si es que el box no tiene altura */
+}

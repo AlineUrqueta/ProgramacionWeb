@@ -1,0 +1,27 @@
+//Colores personalizados
+//Huemint.com 
+$primary:   #f29092;
+$secondary: #1c5e60;
+$success:   #62a71d;
+$info:      #2f807c;
+$warning:   #fec171;
+$danger:    #f10f67;
+$light:     #78e9fd;
+$dark:      #000100;
+
+//Agregar un color
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+$custom-color-theme:(
+    "attention":#73b0da,
+    "bts":#743399,
+);
+$theme-colors:map-merge($theme-colors, $custom-color-theme );
+
+//Cambiar fuente
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+$font-family-base: 'Delicious Handrawn', cursive;
+
+// Importar Bootstrap
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

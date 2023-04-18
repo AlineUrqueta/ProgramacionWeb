@@ -1,0 +1,15 @@
+.flex-container{
+    display: flex;
+    border:2px solid red;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.box{
+    border:1px solid blue;
+    background-color: lightblue;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

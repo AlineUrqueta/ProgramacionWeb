@@ -1,0 +1,15 @@
+div{
+    border: 1px  solid gray;
+    margin: 5px;
+    padding:10px;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    text-align: center;
+    
+    /* Formato reloj */
+    margin: 5px 10px 15px 20px;
+    /* Arriba Abajo*/
+    margin: 10px 20px;
+    
+}

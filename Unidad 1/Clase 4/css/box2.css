@@ -1,0 +1,14 @@
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+    float: left;
+    margin:10px;
+    text-align: center;
+    background-color: rgb(208, 208, 236);
+    /*display: inline-block;*/
+}
+
+#div3{
+    clear:both;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h2>Formularios:</h2>
+    <hr>
+    <form>
+
+        <div>
+            <label for="txtNombre">Nombre: </label>
+            <input type="text" id="txtNombre">
+        </div>
+
+        <div>
+            <label for="txtEmail">Mail: </label>
+            <input type="email" id="txtEmail" >
+        </div>
+
+        <div>
+            <label for="txtEdad">Edad: </label>
+            <input type="number" id="txtEdad" min="0" max="80">
+        </div>
+
+        <div>
+            <label for="txtFechaNacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="txtFechaNacimiento">
+        </div>
+
+        <div>
+            <label for="cmbCarreras">Carreras</label>
+            <select id="cmbCarreras">
+                <option>-- Seleccione --</option>
+                <option value="1"> T.U. en Informática</option>
+                <option value="2"> T.U. en Electrónica</option>
+                <option value="3"> T.U. en Química</option>
+            </select>
+        </div>
+
+        <div>
+            <!-- El name tiene que ser igual para que los otros rb sean descartados-->
+            <label for="">Lugar de origen</label>
+            <input type="radio" name ="origen" id="radioValpo" checked>
+            <label for="radioValpo">Valparaiso</label>
+
+            <input type="radio" name ="origen" id="radioVina" >
+            <label for="radioVina">Viña del Mar</label>
+
+            <input type="radio" name ="origen" id="radioQuilpue" >
+            <label for="radioQuilpue">Quilpue</label>
+
+        </div>
+
+        <div>
+            <input type="checkbox" name="" id="checkGratuidad">
+            <label for="checkGratitud">Tiene Gratuidad</label>
+
+        </div>
+
+        <div>
+            <label for="txtComentarios">Comentarios</label>
+            <textarea id="txtComentarios" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <button type="submit"> Enviar</button>
+        </div>
+
+    </form>
+</body>
+</html>
